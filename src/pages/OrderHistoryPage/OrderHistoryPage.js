@@ -34,7 +34,7 @@ export default function OrderHistoryPage({ user, setUser }) {
     <main className={styles.OrderHistoryPage}>
       <aside className={styles.aside}>
         <Logo />
-        <Link to="/orders/new" className="button btn-sm">NEW ORDER</Link>
+        <Link to="/orders/new" className="button btn-sm">NEW TEAM</Link>
         <UserLogOut user={user} setUser={setUser} />
       </aside>
 

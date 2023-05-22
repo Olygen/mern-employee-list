@@ -22,12 +22,13 @@ export default function OrderDetail({
       <div className={styles.OrderDetail}>
         <div className={styles.sectionHeading}>
           {order.isPaid ?
-            <span>ORDER <span className="smaller">{order.orderId}</span></span>
+            <span>TEAM <span className="smaller">{order.orderId}</span></span>
             :
-            <span>NEW ORDER</span>
+            <span>NEW TEAM </span>
           }
           <span>{new Date(order.updatedAt).toLocaleDateString()}</span>
         </div>
+        <span style={{ textAlign: 'right' }}>Add hours</span>
         <div className={`${styles.lineItemContainer} flex-ctr-ctr flex-col scroll-y`}>
           {lineItems.length ?
             <>
@@ -40,14 +41,15 @@ export default function OrderDetail({
                     className="btn-sm"
                     onClick={handleCheckout}
                     disabled={!lineItems.length}
-                  >CHECKOUT</button>
+                  >Total cost</button>                  
                 }
                 <span>{order.totalQty}</span>
                 <span className={styles.right}>${order.orderTotal.toFixed(2)}</span>
               </section>
+              <span>Click if OK. Otherwise change number of hours or remove employees by pressing "-" button</span>
             </>
             :
-            <div className={styles.hungry}>Hungry?</div>
+            <div className={styles.hungry}>Need new team for the project?</div>
           }
         </div>
       </div>

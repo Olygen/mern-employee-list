@@ -5,12 +5,13 @@
     padding: 3vmin;
     font-size: 2vmin;
     color: var(--text-light);
+    text-align: center;
   }
   
   .OrderDetail .sectionHeading {
     width: 100%
   }
-  
+
   .OrderDetail .lineItemContainer {
     margin-top: 3vmin;
     justify-content: flex-start;

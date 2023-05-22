@@ -6,6 +6,7 @@ return (
     <div className="flex-ctr-ctr"><img src={lineItem.item.emoji} alt="Image" width="50" height="50"/></div>
     <div className="flex-ctr-ctr flex-col">
       <span className="align-ctr">{lineItem.item.name}</span>
+      <span style={{ fontSize: '1vw' }}>{lineItem.item.position}</span>
       <span>{lineItem.item.price.toFixed(2)}</span>
     </div>
     <div className={styles.qty} style={{ justifyContent: isPaid && 'center' }}>

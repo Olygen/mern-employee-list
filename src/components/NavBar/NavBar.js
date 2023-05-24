@@ -11,9 +11,9 @@ export default function NavBar({ user, setUser }) {
 
   return (
     <nav>
-      <Link to="/orders">Teams History</Link>
+      <Link to="/teams">Teams History</Link>
       &nbsp; | &nbsp;
-      <Link to="/orders/new">New Team</Link>
+      <Link to="/teams/new">New Team</Link>
       <span>Welcome, {user.name}</span>
       <Link to="" onClick={handleLogOut}>
         Log Out

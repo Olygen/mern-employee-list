@@ -1,6 +1,7 @@
 import { getToken } from './users-service';
 
 export default async function sendRequest(url, method = 'GET', payload = null) {
+  console.log('sendRequest');
   // Fetch takes an optional options object as the 2nd argument
   // used to include a data payload, set headers, etc.
   const options = { method };
@@ -18,6 +19,7 @@ export default async function sendRequest(url, method = 'GET', payload = null) {
   }
   const res = await fetch(url, options);
   // res.ok will be false if the status code set to 4xx in the controller action
+  console.log(res);
   if (res.ok) return res.json();
   throw new Error('Bad Request');
 }

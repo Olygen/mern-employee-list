@@ -1,0 +1,50 @@
+.TeamDetail {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 3vmin;
+    font-size: 2vmin;
+    color: var(--text-light);
+    text-align: center;
+  }
+  
+  .TeamDetail .sectionHeading {
+    width: 100%
+  }
+
+  .TeamDetail .lineEmployeeContainer {
+    margin-top: 3vmin;
+    justify-content: flex-start;
+    height: calc(100vh - 18vmin);
+    width: 100%;
+  }
+  
+  .TeamDetail .total {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 18.35vw 5.75vw 5.25vw;
+    padding: 1vmin 0;
+    color: var(--text-light);
+    border-top: .1vmin solid var(--tan-3);
+  }
+  
+  .TeamDetail .total span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5vw;
+    color: var(--text-dark);
+  }
+  
+  .TeamDetail .total span.right {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .TeamDetail .need {
+    position: absolute;
+    top: 50vh;
+    font-size: 2vw;
+    max-width: 20%;
+  }
+  

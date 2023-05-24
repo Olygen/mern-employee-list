@@ -61,7 +61,9 @@ export default function NewTeamPage({ user, setUser }) {
 console.log('++++++++++++++++++++' + choiceEmployee)
 
 // Filter employees based on active department selection
-const filteredEmployees = activeDep !== "All" ? choiceEmployee.filter(employee => employee.department.name === activeDep) : choiceEmployee;
+const filteredEmployees = activeDep !== "All" 
+? choiceEmployee.filter(employee => employee.department.name === activeDep) 
+: choiceEmployee;
   return (
     <main className={styles.NewTeamPage}>
       <aside>

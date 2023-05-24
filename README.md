@@ -20,9 +20,9 @@ To take advantage of app, user have to Sign up or Log in
 
 ## Getting Started
 
-To view the project planning and organization, please visit our [Trello board](https://trello.com/invite/b/5VixypJO/ATTIb944c96f904c7ca07274eda8bd5c66243ACA6212/mern-project).
+To view the project planning and organization, please visit our Trello boardhttps://trello.com/invite/b/5VixypJO/ATTIb944c96f904c7ca07274eda8bd5c66243ACA6212/mern-project.
 
-The deployed application can be accessed on Render: [Live Demo]().
+The deployed application can be accessed on Render: https://empy-dempy-the-hr-helper.onrender.com/teams/new.
 
 ## Future Enhancements
 
